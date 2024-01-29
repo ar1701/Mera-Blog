@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mera Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Daily Blog</h1>
+    <h3><a href="http://localhost:8080/blog/new">Create a new Blog</a></h3>
+    <div class="parent">
+        <% for(db of dbs) {%>
+            <div class="child">
+                <h3>
+                    <%= db.name %>
+                </h3>
+                <hr>
+                <p>
+                    <%= db.content %>
+                </p>
+                <br><br>
+                <a href="/blog/view/<%= db.id %>">View</a>
+                <a href="/blog/edit/<%= db.id %>">Edit</a>
+                <form class="del" method="post" action="/blog/delete/<%= db.id %>?_method=DELETE">
+                    <button>Delete</button>
+                </form>
+            </div>
+        <%}%>
+    </div>
+</body>
+
+</html>

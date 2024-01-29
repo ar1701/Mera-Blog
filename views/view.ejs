@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Your Post</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Welcome @<%= ob.name%></h1>
+    <h4>Blog ID: <%= ob.id %></h4>
+     <div class="parent">
+            <div class="child">
+                <h3>
+                    <%= ob.name %>
+                </h3>
+                <hr>
+                <p>
+                    <%= ob.content %>
+                </p>
+                <br><br>
+               <a href="http://localhost:8080/blog">Back</a>
+            </div>
+    </div>
+</body>
+</html>
