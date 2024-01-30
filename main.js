@@ -27,7 +27,7 @@ let dbs = [
    {
       id: uuidv4(),
       name: "Rahul Kumar",
-      content: "Hloo goiss, my name is Rahul. Naam to suna hi hoga. By Profession I am a HR in FAANG Company.",
+      content: "Hi I am a Open Source Developer and recently attended FOSS United 3.0 in Bangalore.",
    },
 ];
 
